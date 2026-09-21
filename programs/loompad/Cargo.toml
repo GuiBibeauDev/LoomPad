@@ -24,4 +24,4 @@ unexpected_cfgs = { level = "warn", check-cfg = ['cfg(feature, values("anchor-de
 
 [dependencies]
 anchor-lang = "0.31.1"
-anchor-spl = { version = "0.31.1", features = ["token_2022"] }
+anchor-spl = { version = "1.2.0", features = ["token_2022"] }
