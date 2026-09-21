@@ -22,7 +22,7 @@ jobs:
           cache: npm
       - run: npm ci --ignore-scripts
       - run: npm run validate
-      - uses: changesets/action@v1
+      - uses: changesets/action@v2
         with:
           version: npm run changeset version
           commit: "chore: version packages"
