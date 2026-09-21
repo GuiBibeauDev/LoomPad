@@ -47,8 +47,6 @@ flowchart TB
   I -. verifies .-> S
 ```
 
-
-
 The API is a cache, never an authority. Clients can reconstruct launch state from program accounts and events.
 
 ## LaunchManifest
@@ -78,8 +76,6 @@ The TypeScript validator rejects malformed addresses, insecure metadata URLs, du
 - responsive reference console and integration examples;
 - strict TypeScript, lint, format, unit-test, build, audit, and CodeQL checks.
 
-
-
 ## How it works
 
 ```mermaid
@@ -95,8 +91,6 @@ sequenceDiagram
   Solana-->>SDK: signature + account changes
   SDK-->>App: typed result
 ```
-
-
 
 Current preview boundary: manifest creation, deterministic validation, quoting, state accounting, vesting math, and graduation checks are implemented. Asset settlement, sell execution, claims, and external liquidity CPI are enabled.
 
@@ -130,8 +124,6 @@ examples/                web, wallet, bot, terminal, and Node patterns
 docs/                    architecture, security, and protocol specifications
 scripts/                 local repository utilities
 ```
-
-
 
 ## Local development
 
