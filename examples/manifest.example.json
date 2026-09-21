@@ -1,0 +1,44 @@
+{
+  "version": "1.0.0",
+  "launch": "11111111111111111111111111111111",
+  "mint": "So11111111111111111111111111111111111111112",
+  "creator": "Vote111111111111111111111111111111111111111",
+  "createdAt": 1789952400,
+  "token": {
+    "name": "LoomPad Example",
+    "symbol": "LOOM",
+    "uri": "https://example.com/loompad-example.json",
+    "decimals": 9
+  },
+  "totalSupply": "1000000000000000n",
+  "creatorAllocation": "100000000000000n",
+  "curve": {
+    "type": "constant-product",
+    "virtualTokenReserve": "900000000000000n",
+    "virtualQuoteReserve": "100000000000n"
+  },
+  "fees": {
+    "tradeFeeBasisPoints": 100,
+    "recipients": [
+      { "address": "11111111111111111111111111111111", "basisPoints": 7000, "label": "protocol" },
+      {
+        "address": "So11111111111111111111111111111111111111112",
+        "basisPoints": 3000,
+        "label": "creator"
+      }
+    ]
+  },
+  "vesting": {
+    "allocation": "100000000000000n",
+    "startTimestamp": 1789952400,
+    "cliffSeconds": 2592000,
+    "durationSeconds": 31536000
+  },
+  "graduation": {
+    "condition": { "type": "quote-reserve", "threshold": "850000000000n" },
+    "adapter": "Stake11111111111111111111111111111111111111"
+  },
+  "authorities": { "mintAuthority": null, "freezeAuthority": null, "updateAuthority": null },
+  "security": { "configurationMutable": false, "migrationAdapterAllowlisted": true },
+  "modules": ["constant-product", "creator-vesting", "fee-router", "quote-reserve-graduation"]
+}

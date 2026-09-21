@@ -1,0 +1,6 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": { "composite": false, "noEmit": true, "jsx": "react-jsx" },
+  "include": ["apps/**/*.ts", "apps/**/*.tsx", "packages/**/*.ts", "vitest.config.ts"],
+  "exclude": ["**/dist/**", "**/dist-types/**", "**/node_modules/**"]
+}

@@ -1,0 +1,31 @@
+name: Bug report
+description: Report a reproducible non-security defect
+title: "bug: "
+labels: [bug, triage]
+body:
+  - type: markdown
+    attributes:
+      value: "For vulnerabilities, use a private security advisory instead."
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What happened, and what did you expect?
+    validations: { required: true }
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Provide a minimal reproduction with non-sensitive data.
+    validations: { required: true }
+  - type: input
+    id: commit
+    attributes:
+      label: Version or commit
+    validations: { required: true }
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Node, Rust, Solana, Anchor, OS, and wallet/client versions.
+    validations: { required: true }

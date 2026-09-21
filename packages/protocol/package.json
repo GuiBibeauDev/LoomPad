@@ -1,0 +1,21 @@
+{
+  "name": "@loompad/protocol",
+  "version": "0.1.0",
+  "description": "Canonical LaunchManifest types and deterministic protocol math.",
+  "type": "module",
+  "license": "Apache-2.0",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -b",
+    "typecheck": "tsc -b --pretty false"
+  }
+}

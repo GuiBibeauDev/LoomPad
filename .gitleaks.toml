@@ -1,0 +1,11 @@
+title = "LoomPad gitleaks configuration"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Public placeholder addresses and documentation only"
+paths = [
+  '''\.env\.example$''',
+  '''examples/manifest\.example\.json$'''
+]

@@ -1,0 +1,16 @@
+{
+  "name": "@loompad/indexer",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Optional, non-custodial LoomPad read index.",
+  "type": "module",
+  "license": "Apache-2.0",
+  "scripts": {
+    "build": "tsc -b",
+    "typecheck": "tsc -b --pretty false",
+    "start": "node dist/server.js"
+  },
+  "dependencies": {
+    "@loompad/protocol": "0.1.0"
+  }
+}

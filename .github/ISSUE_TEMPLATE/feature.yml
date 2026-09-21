@@ -1,0 +1,23 @@
+name: Feature proposal
+description: Propose a scoped protocol or developer-experience improvement
+title: "proposal: "
+labels: [proposal]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What integration or protocol problem needs solving?
+    validations: { required: true }
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed design
+      description: Include interfaces, alternatives, and compatibility.
+    validations: { required: true }
+  - type: textarea
+    id: security
+    attributes:
+      label: Security and trust impact
+      description: Describe authorities, custody, accounts, arithmetic, and abuse cases.
+    validations: { required: true }

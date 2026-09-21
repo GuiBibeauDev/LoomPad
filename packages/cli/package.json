@@ -1,0 +1,21 @@
+{
+  "name": "@loompad/cli",
+  "version": "0.1.0",
+  "description": "Developer CLI for LoomPad manifests and launches.",
+  "type": "module",
+  "license": "Apache-2.0",
+  "bin": {
+    "loompad": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -b",
+    "typecheck": "tsc -b --pretty false",
+    "start": "node dist/cli.js"
+  },
+  "dependencies": {
+    "@loompad/protocol": "0.1.0"
+  }
+}
