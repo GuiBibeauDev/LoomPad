@@ -1,4 +1,7 @@
 #![deny(unsafe_code)]
+// Anchor 0.31 generates AccountInfo::realloc calls, including helper modules
+// outside the annotated program module. Remove this when Anchor replaces them.
+#![allow(deprecated)]
 
 use anchor_lang::prelude::*;
 
